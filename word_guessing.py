@@ -3,8 +3,6 @@
 import os
 import random
 
-print("Welcome to the Word Guessing Game!")
-
 def choose_word():
     words = ["pants","sweater","shirt"]
     return random.choice(words)
@@ -18,6 +16,7 @@ def game():
     word_guesses = 0
     letter_guesses = set()
 
+    print("Welcome  to the Word Guessing Game!")
     print("Guess the word! You get three chances to guess the word.")
 
     while word_guesses < 3:
